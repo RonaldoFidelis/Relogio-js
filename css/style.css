@@ -1,6 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #212121;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    width: 500px;
+    height: 500px;
+    background-color: #D1D1D1;
+    border-radius: 300px;
+    border: 10px solid #00356b;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num {
+    font-size: 1.5em;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 5px;    
+}
+
+/* Configuraçao para deixar os números ao redo */
+
+.num-1 {
+    transform: rotate(30deg);
+}
+.num-2 {
+    transform: rotate(60deg);
+}
+.num-3 {
+    transform: rotate(90deg);
+}
+.num-4 {
+    transform: rotate(120deg);
+}
+.num-5 {
+    transform: rotate(150deg);
+}
+.num-6 {
+    transform: rotate(180deg);
+}
+.num-7 {
+    transform: rotate(210deg);
+}
+.num-8 {
+    transform: rotate(240deg);
+}
+.num-9 {
+    transform: rotate(270deg);
+}
+.num-10 {
+    transform: rotate(300deg);
+}
+.num-11 {
+    transform: rotate(330deg);
+}
+.num-12 {
+    transform: rotate(360deg);
+}
+
+.ponteiro-segundo {
+    width: 3px;
+    height: 190px;
+    background-color: #BD323F;
+    position: absolute;
+    border-radius: 5px;
+
+    /* Rotacionar o ponteiro 
+    transform: translate(0, -50% = subir o ponteiro 50% no valor dele)
+    rotate(30deg) = rotacionar o ponteiro
+    transform-origin: bottom center = mantém o ponteiro rotacionando no centro
+    */
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+
+.ponteiro-minuto {
+    width: 6px;
+    height: 180px;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 10px; 
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+
+.ponteiro-hora {
+    width: 9px;
+    height: 150px;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 10px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+}
+
+.center {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #BD323F;
+    position: absolute;
+}
