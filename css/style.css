@@ -20,8 +20,8 @@ body {
 }
 
 .relogio {
-    width: 500px;
-    height: 500px;
+    min-width: 500px;
+    min-height: 500px;
     background-color: #D1D1D1;
     border-radius: 300px;
     border: 10px solid #00356b;
